@@ -19,6 +19,8 @@ import lombok.NoArgsConstructor;
 @Entity(name="pessoa")
 public class PessoaModel implements Serializable {
 	
+//	Classe modelo onde recebe todos os atributos para cadastrar a pessoa
+	
 	private static final long serialVersionUID = 1L;
 	
 	@Id

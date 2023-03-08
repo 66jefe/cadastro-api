@@ -10,6 +10,8 @@ import lombok.Setter;
 @Setter
 public class ResponseModel {
 	
+//	Classe para mensagens personalisadas em caso de erros
+	
 	private String msg;
 
 }
