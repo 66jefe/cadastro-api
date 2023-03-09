@@ -1,5 +1,7 @@
 package br.com.jeferson.cadastro.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,11 @@ public class PessoaService {
 //	Método para listar todas pessoas
 	public Iterable<PessoaModel> listar() {
 		return pr.findAll();
+	}
+	
+//	Método para listar pessoa por id	
+	public Optional<PessoaModel> listarId(Integer id) {
+		return pr.findById(id);
 	}
 	
 //	Método para cadastrar ou alterar pessoas

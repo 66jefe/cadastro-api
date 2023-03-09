@@ -1,5 +1,7 @@
 package br.com.jeferson.cadastro.controller;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -25,6 +27,11 @@ public class PessoaController {
 
 	@Autowired
 	private PessoaService ps;
+	
+	@GetMapping("/listar/{id}")
+	public Optional<PessoaModel> listarId(@PathVariable Integer id) {
+		return ps.listarId(id);
+	}
 
 	@GetMapping("/listar")
 	public Iterable<PessoaModel> listar() {
