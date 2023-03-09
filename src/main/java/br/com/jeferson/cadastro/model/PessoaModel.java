@@ -29,8 +29,14 @@ public class PessoaModel implements Serializable {
 	private Integer id;
 	private String nome;
 	private int idade;
+	
+	@Column(length = 11)
 	private String cpf;
+	
+	@Column(length = 9)
 	private String sexo;
+	
+	@Column(length = 11)
 	private String telefone;
 	
 }

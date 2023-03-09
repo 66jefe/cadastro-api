@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.jeferson.cadastro.model.PessoaModel;
@@ -16,6 +17,7 @@ import br.com.jeferson.cadastro.model.ResponseModel;
 import br.com.jeferson.cadastro.service.PessoaService;
 
 @RestController
+@RequestMapping("/api/pessoas")
 @CrossOrigin(origins = "*")
 public class PessoaController {
 	
