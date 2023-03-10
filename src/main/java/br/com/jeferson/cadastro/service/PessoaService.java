@@ -40,7 +40,7 @@ public class PessoaService {
 		} else if(pm.getCpf().equals("")) {
 			rm.setMsg("O CPF é obrigatório!");
 			return new ResponseEntity<ResponseModel>(rm, HttpStatus.BAD_REQUEST);
-		} else if(pm.getIdade() < 0) {
+		} else if(pm.getIdade().equals("")) {
 			rm.setMsg("A idade é obrigatório!");
 			return new ResponseEntity<ResponseModel>(rm, HttpStatus.BAD_REQUEST);
 		} else {
