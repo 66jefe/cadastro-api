@@ -39,7 +39,7 @@ public class PessoaController {
 		return ps.cadastrarAlterar(pm, "cadastrar");
 	}
 
-	@PutMapping("/alterar")
+	@PutMapping("/alterar/{id}")
 	public ResponseEntity<?> alterar(@RequestBody PessoaModel pm) {
 		return ps.cadastrarAlterar(pm, "alterar");
 	}
