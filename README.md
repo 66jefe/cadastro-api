@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 API Cadastro de pessoas é um crud back-end. 
-A aplicação consiste em fazer a criação de cadastro de pessoas. Listar todos os funcionarios criados e por ID. Alterar qualquer funcionario e deletar por ID.
+A aplicação consiste em fazer a criação de cadastro de pessoas. Listar todos as pessoas criados e por ID. Alterar qualquer funcionario e deletar por ID.
 
 ## Tecnologias utilizadas
 - Java
